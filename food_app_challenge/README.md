@@ -4,4 +4,4 @@ Based on [this](https://dribbble.com/shots/13953161-Food-Recipe-Challenge-Mobile
 
 # Screenshots
 
-![My Version](/screenshots/screenshot-1.jpg)
+![My Version](/screenshots/food-app-1.jpg)
