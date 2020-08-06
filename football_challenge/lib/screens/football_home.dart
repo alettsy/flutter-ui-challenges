@@ -4,14 +4,7 @@ import 'package:football_challenge/core/constants.dart';
 import 'package:football_challenge/components/components.dart';
 import 'package:football_challenge/resources/resources.dart';
 
-class FootballHome extends StatefulWidget {
-  @override
-  _FootballHomeState createState() => _FootballHomeState();
-}
-
-class _FootballHomeState extends State<FootballHome> {
-  TeamItem selectedTeam;
-
+class FootballHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,16 +22,7 @@ class _FootballHomeState extends State<FootballHome> {
       body: SafeArea(
         child: Column(
           children: [
-            SizedBox(
-              height: 150,
-              child: Container(
-                width: MediaQuery.of(context).size.width * 0.5,
-                color: Colors.white,
-                child: Image(
-                  image: AssetImage('assets/images/premier_league.png'),
-                ),
-              ),
-            ),
+            PremierLeagueLogo(),
             Expanded(
               child: ClipPath(
                 clipper: BackgroundClipper(),
@@ -56,30 +40,14 @@ class _FootballHomeState extends State<FootballHome> {
                         ),
                       ),
                       SizedBox(height: 5),
-                      Text('❤',
-                          style: TextStyle(
-                            fontSize: 16,
-                          )),
-                      SizedBox(height: 20),
-                      Expanded(
-                        child: ListView.builder(
-                          itemCount: teams.length,
-                          itemBuilder: (context, index) {
-                            return TeamTile(
-                              item: teams[index],
-                              onTap: () {
-                                setState(
-                                  () {
-                                    if (selectedTeam != null)
-                                      selectedTeam.toggle();
-                                    selectedTeam = teams[index]..toggle();
-                                  },
-                                );
-                              },
-                            );
-                          },
+                      Text(
+                        '❤',
+                        style: TextStyle(
+                          fontSize: 16,
                         ),
-                      )
+                      ),
+                      SizedBox(height: 20),
+                      TeamList(),
                     ],
                   ),
                 ),
