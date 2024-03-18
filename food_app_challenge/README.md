@@ -4,4 +4,4 @@ Based on [this](https://dribbble.com/shots/13953161-Food-Recipe-Challenge-Mobile
 
 # Screenshots
 
-![My Version](/screenshots/food-app.jpg)
+<img src="/screenshots/food-app.jpg" alt="My Version" style="width:250px" />
