@@ -4,4 +4,4 @@ Based on [this](https://dribbble.com/shots/13980919-Candy-Sneakers/attachments/5
 
 # Screenshots
 
-![My Version](/screenshots/candy-shoes-app.png)
+<img src="/screenshots/candy-shoes-app.png" alt="My Version" style="width:250px" />
